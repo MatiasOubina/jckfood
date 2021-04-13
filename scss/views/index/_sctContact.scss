@@ -1,0 +1,236 @@
+.contactoData-container{
+    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
+    padding-bottom: 20px;
+    border-bottom: 2px solid #F1A434;
+    overflow-x: hidden;
+
+    h3{
+        text-align: center;
+        padding-top: 25px;
+        margin-bottom: 30px;
+        font-size: 58px;
+    }
+}
+
+.form-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.name, .mail{
+    display: inline-block;
+    margin: 15px 10px 15px 0;  
+    label, input{
+        display: block;
+    }
+}
+
+.subject, .message{
+    margin: 15px 10px 15px 0;  
+    label{
+        display: block;
+    }
+
+    textarea{
+        border-radius: 10px;
+        background-color: #F1A434;
+    }
+}
+
+.contact-buttons{
+    input{
+        width: 100px;
+        margin: 30px 15px 50px 0px;
+        transition: 500ms linear;
+    }
+}
+
+.contact-buttons{
+    input:hover{
+        color: white;
+        border-radius: 0 30px;
+        background-color: red;
+    }
+}
+
+.boxData-container{
+    display: inline;
+    text-align: center;
+    font-size: 16px;
+    
+    
+    .boxMobile{
+    width: 600px;
+    background-color: #F1A434;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+    line-height: 10px;
+    }
+
+}
+
+@media(min-width: 1024px) and (max-width: 1268px){
+    .contactoData-container{
+        h3{
+            font-size: 48px;
+            padding: 20px;
+        }
+    }
+
+    .form-contacto{
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .name, .mail{
+        label, input{
+            width: 223px;
+        }
+
+        label{
+            text-align: left;
+        }
+    }
+
+    .boxData-container{
+        display: inline;
+        text-align: center;
+        font-size: 25px;
+        
+        .boxMobile{
+        width: 600px;
+        background-color: #F1A434;
+        border-radius: 10px;
+        margin: 10px 0;
+        padding: 20px;
+        line-height: 15px;
+        }
+
+    }
+
+    .googleMap{
+        text-align: center;
+        margin-right: 15px;
+        
+    }
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+    .form-contacto{
+        font-size: 25px;
+    }
+
+    .contactoData-container{
+        h3{
+            font-size: 38px;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+
+    .dataBox{
+        display: none;
+    }
+
+    .boxData-container{
+        display: inline;
+        text-align: center;
+        font-size: 22px;
+        
+        
+        .boxMobile{
+        width: 600px;
+        background-color: #F1A434;
+        border-radius: 10px;
+        margin: 10px auto;
+        padding: 20px;
+        line-height: 15px;
+        }
+
+    }
+
+    .googleMap{
+        text-align: center;
+        margin-right: 0;
+    }
+}
+
+@media(min-width: 425px) and (max-width: 767px){
+    .form-contacto{
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .boxData-container{
+        display: inline;
+        text-align: center;
+        font-size: 22px;
+        
+        .boxMobile{
+        width: 400px;
+        background-color: #F1A434;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 20px;
+        line-height: 15px;
+        }
+
+    }
+
+    .googleMap{
+        text-align: center;
+        iframe{
+            width: 400px;
+        }
+    }
+}
+
+@media(max-width: 424px){
+    .form-contacto{
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .contactoData-container{
+        h3{
+            font-size: 20px;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+    .message{
+        textarea{
+            width: 250px;
+        }
+    }
+
+    .boxData-container{
+        display: inline;
+        text-align: center;
+        font-size: 22px;
+        
+        
+        .boxMobile{
+        width: 280px;
+        height: 120px;
+        background-color: #F1A434;
+        border-radius: 10px;
+        margin: 10px auto;
+        padding: 10px;
+        line-height: 25px;
+
+            p{
+                margin-top: 10px;
+            }
+        }
+
+    }
+
+    .googleMap{
+        text-align: center;
+        iframe{
+            width: 280px;
+        }
+    }
+}

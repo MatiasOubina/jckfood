@@ -1,0 +1,32 @@
+.nosotros{
+    background: rgba(192,38,26,1);
+}
+
+.card-text{
+    color: black;
+}
+
+.btn-volver{
+    width: 250px;
+    height: 60px;
+    background-color: #F1A434;
+    align-self: center;
+    text-align: center;
+    padding: 12px 0;
+    border-radius: 30px 0;
+    transition: 500ms linear;
+    margin: 25px auto;
+        
+        a{
+            color: white;
+            text-transform: uppercase;
+            font-size: 20px;
+            line-height: 40px;
+            text-decoration: none;
+        }
+}
+
+.btn-volver:hover{
+    border-radius: 0 30px;
+    background-color: red;
+}

@@ -1,0 +1,47 @@
+.navbar{
+    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
+    border-bottom: 1px solid #F1A434;
+}
+
+.navbar-brand{
+    font-family: 'Another Shabby';
+    text-transform: uppercase;
+    margin-left: 100px;
+    span{
+        color: #F1A434;
+    }
+}
+
+.navbar-collapse{
+    margin-right: 100px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    background-color: #F1A434;
+}
+
+
+@media (max-width: 991px){
+    .navbar-brand{
+        margin-left: 0;
+    }
+
+    .navbar-toggler{
+        background-color: #F1A434;
+    }
+
+    .navbar-collapse{
+        margin-right: 0;
+    }
+
+    .show{
+        .navbar-nav{
+            font-size: 22px;
+        }
+    }
+}
+

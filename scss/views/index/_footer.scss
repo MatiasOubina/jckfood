@@ -1,0 +1,91 @@
+footer{
+    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
+    
+    p{
+        text-align: center;
+        margin: 10px 0 0 0;
+    }
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mediosDePago{
+    img{
+        width: 50px;
+        margin-right: 5px;
+        background-color: #F1A434;
+        border-radius: 10px;
+    }
+}
+
+.logoFooter{
+    h2{
+        font-family: 'Another Shabby';
+        text-transform: uppercase;
+    }
+    
+    span{
+        color: #F1A434
+    }
+}
+
+.terminosCondiciones{
+    
+        a{
+            display: block;
+            margin-top: 5px;
+            
+            text-align: center;
+        }
+}
+
+.autor{
+        color: #F1A434;
+}
+
+@media (max-width: 768px){
+    
+    .mediosDePago{
+    
+        img{
+            width: 50px;
+            
+        }
+    }
+
+
+    .logoFooter{
+        h2{
+            font-size: 16px;
+        }
+    }
+
+    .terminosCondiciones{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 425px){
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .mediosDePago{
+        margin: 20px 0;
+    }
+
+    .logoFooter{
+        h2{
+            margin: 10px 0;
+        }
+    }
+
+    .terminosCondiciones{
+        
+        margin: 10px 0;
+    }
+}

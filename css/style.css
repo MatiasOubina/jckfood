@@ -1,0 +1,685 @@
+@font-face {
+  font-family: "Another Shabby";
+  src: url(../../fonts/Anothershabby_trial.woff) format("woff");
+}
+@font-face {
+  font-family: "Josefin Sans";
+  src: url(../../fonts/JosefinSans-Regular.woff) format("woff");
+}
+h2, h3, p, a, label {
+  font-family: "Josefin Sans";
+  color: white;
+}
+
+a {
+  color: black;
+}
+
+input, textarea, select {
+  border: none;
+  outline: none;
+  border-radius: 10px 0;
+  background-color: #F1A434;
+  color: black;
+  resize: none;
+}
+
+::placeholder {
+  color: #453B3B;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
+  border-bottom: 1px solid #F1A434;
+}
+
+.navbar-brand {
+  font-family: "Another Shabby";
+  text-transform: uppercase;
+  margin-left: 100px;
+}
+.navbar-brand span {
+  color: #F1A434;
+}
+
+.navbar-collapse {
+  margin-right: 100px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  background-color: #F1A434;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin-left: 0;
+  }
+
+  .navbar-toggler {
+    background-color: #F1A434;
+  }
+
+  .navbar-collapse {
+    margin-right: 0;
+  }
+
+  .show .navbar-nav {
+    font-size: 22px;
+  }
+}
+.buttons {
+  background-image: url(../../img/imgSctButtons.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-1, .button-2 {
+  width: 250px;
+  height: 60px;
+  background-color: #F1A434;
+  align-self: center;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 30px 0;
+  transition: 500ms linear;
+}
+.button-1 a, .button-2 a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.button-1:hover, .button-2:hover {
+  border-radius: 0 30px;
+  background-color: red;
+}
+
+.info-container {
+  background-color: #F1A434;
+}
+
+.info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.horario, .direccion, .telefono {
+  padding: 0 15px;
+}
+.horario img, .direccion img, .telefono img {
+  width: 50px;
+  padding: 10px 0;
+  margin-right: 10px;
+}
+.horario p, .direccion p, .telefono p {
+  display: inline;
+  color: #000;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 767px) {
+  .info-container {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .buttons {
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  .button-1 {
+    position: absolute;
+    top: 50px;
+  }
+
+  .button-2 {
+    position: absolute;
+    top: 150px;
+  }
+
+  .horario img, .direccion img, .telefono img {
+    width: 40px;
+  }
+}
+@media (max-width: 991px) {
+  .buttons {
+    height: 400px;
+  }
+}
+.redes-container {
+  background-color: #F1A434;
+}
+
+.redes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.facebook, .instagram, .tiwtter {
+  padding: 0 15px;
+  transition: 10ms;
+}
+.facebook img, .instagram img, .tiwtter img {
+  width: 40px;
+  padding: 10px 0;
+  margin-right: 10px;
+  transition: 3s;
+}
+
+.facebook:hover img, .instagram:hover img, .tiwtter:hover img {
+  transform: rotate(360deg);
+}
+
+.container-video {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.video {
+  background-color: #000;
+  border-bottom: 3px solid #F1A434;
+}
+
+video {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -100;
+}
+
+.video-content {
+  position: absolute;
+  color: white;
+}
+.video-content h1 {
+  font-family: "Another Shabby";
+  font-size: 100px;
+  text-transform: uppercase;
+}
+.video-content h1 span {
+  color: #F1A434;
+}
+.video-content p {
+  font-size: 50px;
+}
+.video-content .video-txt {
+  font-style: italic;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .video-content h1 {
+    font-size: 80px;
+  }
+  .video-content p {
+    font-size: 30px;
+  }
+  .video-content .video-txt {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .video-content h1 {
+    font-size: 60px;
+  }
+  .video-content p {
+    font-size: 25px;
+  }
+  .video-content .video-txt {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 375px) and (max-width: 425px) {
+  .video-content h1 {
+    font-size: 50px;
+  }
+  .video-content p {
+    font-size: 22px;
+  }
+  .video-content .video-txt {
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 374px) {
+  .video-content h1 {
+    font-size: 40px;
+  }
+  .video-content p {
+    font-size: 18px;
+  }
+  .video-content .video-txt {
+    font-size: 15px;
+    margin-bottom: 50px;
+  }
+}
+.servicios-container {
+  overflow: hidden;
+  background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
+  border-bottom: 50px solid #F1A434;
+}
+
+.col h2 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.form-reserva {
+  display: flex;
+  justify-content: center;
+}
+
+.form-box input, .form-box select {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.form-buttons {
+  text-align: center;
+}
+.form-buttons input {
+  display: inline;
+  width: 100px;
+  margin: 30px 15px 50px 15px;
+  transition: 500ms linear;
+}
+
+.form-buttons input:hover {
+  color: white;
+  border-radius: 0 30px;
+  background-color: red;
+}
+
+.deliTake-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  margin: 35px 0;
+  text-align: center;
+}
+.menu p {
+  font-size: 25px;
+}
+.menu a {
+  background-color: #F1A434;
+  border-radius: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  text-decoration: none;
+  transition: 500ms linear;
+}
+
+.menu:hover a {
+  color: white;
+  border-radius: 0 30px;
+  background-color: red;
+}
+
+.deli-buttons input {
+  display: inline;
+  width: 100px;
+  margin: 30px 15px 50px 15px;
+  transition: 500ms linear;
+}
+
+.deli-buttons input:hover {
+  border-radius: 0 30px;
+  background-color: red;
+  color: white;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 660px) {
+  .servicios {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .deliTake-container, .servicios-container {
+    border-bottom: 5px solid #F1A434;
+  }
+}
+.contactoData-container {
+  background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
+  padding-bottom: 20px;
+  border-bottom: 2px solid #F1A434;
+  overflow-x: hidden;
+}
+.contactoData-container h3 {
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: 30px;
+  font-size: 58px;
+}
+
+.form-contacto {
+  display: flex;
+  justify-content: center;
+}
+
+.name, .mail {
+  display: inline-block;
+  margin: 15px 10px 15px 0;
+}
+.name label, .name input, .mail label, .mail input {
+  display: block;
+}
+
+.subject, .message {
+  margin: 15px 10px 15px 0;
+}
+.subject label, .message label {
+  display: block;
+}
+.subject textarea, .message textarea {
+  border-radius: 10px;
+  background-color: #F1A434;
+}
+
+.contact-buttons input {
+  width: 100px;
+  margin: 30px 15px 50px 0px;
+  transition: 500ms linear;
+}
+
+.contact-buttons input:hover {
+  color: white;
+  border-radius: 0 30px;
+  background-color: red;
+}
+
+.boxData-container {
+  display: inline;
+  text-align: center;
+  font-size: 16px;
+}
+.boxData-container .boxMobile {
+  width: 600px;
+  background-color: #F1A434;
+  border-radius: 10px;
+  margin: 10px 0;
+  padding: 15px;
+  line-height: 10px;
+}
+
+@media (min-width: 1024px) and (max-width: 1268px) {
+  .contactoData-container h3 {
+    font-size: 48px;
+    padding: 20px;
+  }
+
+  .form-contacto {
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .name label, .name input, .mail label, .mail input {
+    width: 223px;
+  }
+  .name label, .mail label {
+    text-align: left;
+  }
+
+  .boxData-container {
+    display: inline;
+    text-align: center;
+    font-size: 25px;
+  }
+  .boxData-container .boxMobile {
+    width: 600px;
+    background-color: #F1A434;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    line-height: 15px;
+  }
+
+  .googleMap {
+    text-align: center;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .form-contacto {
+    font-size: 25px;
+  }
+
+  .contactoData-container h3 {
+    font-size: 38px;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .dataBox {
+    display: none;
+  }
+
+  .boxData-container {
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+  }
+  .boxData-container .boxMobile {
+    width: 600px;
+    background-color: #F1A434;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 20px;
+    line-height: 15px;
+  }
+
+  .googleMap {
+    text-align: center;
+    margin-right: 0;
+  }
+}
+@media (min-width: 425px) and (max-width: 767px) {
+  .form-contacto {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .boxData-container {
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+  }
+  .boxData-container .boxMobile {
+    width: 400px;
+    background-color: #F1A434;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    line-height: 15px;
+  }
+
+  .googleMap {
+    text-align: center;
+  }
+  .googleMap iframe {
+    width: 400px;
+  }
+}
+@media (max-width: 424px) {
+  .form-contacto {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .contactoData-container h3 {
+    font-size: 20px;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .message textarea {
+    width: 250px;
+  }
+
+  .boxData-container {
+    display: inline;
+    text-align: center;
+    font-size: 22px;
+  }
+  .boxData-container .boxMobile {
+    width: 280px;
+    height: 120px;
+    background-color: #F1A434;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+    line-height: 25px;
+  }
+  .boxData-container .boxMobile p {
+    margin-top: 10px;
+  }
+
+  .googleMap {
+    text-align: center;
+  }
+  .googleMap iframe {
+    width: 280px;
+  }
+}
+footer {
+  background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
+}
+footer p {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mediosDePago img {
+  width: 50px;
+  margin-right: 5px;
+  background-color: #F1A434;
+  border-radius: 10px;
+}
+
+.logoFooter h2 {
+  font-family: "Another Shabby";
+  text-transform: uppercase;
+}
+.logoFooter span {
+  color: #F1A434;
+}
+
+.terminosCondiciones a {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.autor {
+  color: #F1A434;
+}
+
+@media (max-width: 768px) {
+  .mediosDePago img {
+    width: 50px;
+  }
+
+  .logoFooter h2 {
+    font-size: 16px;
+  }
+
+  .terminosCondiciones {
+    font-size: 12px;
+  }
+}
+@media (max-width: 425px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .mediosDePago {
+    margin: 20px 0;
+  }
+
+  .logoFooter h2 {
+    margin: 10px 0;
+  }
+
+  .terminosCondiciones {
+    margin: 10px 0;
+  }
+}
+.nosotros {
+  background: #c0261a;
+}
+
+.card-text {
+  color: black;
+}
+
+.btn-volver {
+  width: 250px;
+  height: 60px;
+  background-color: #F1A434;
+  align-self: center;
+  text-align: center;
+  padding: 12px 0;
+  border-radius: 30px 0;
+  transition: 500ms linear;
+  margin: 25px auto;
+}
+.btn-volver a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.btn-volver:hover {
+  border-radius: 0 30px;
+  background-color: red;
+}
+
+.underConstruction {
+  background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
+  height: 100vh;
+  text-align: center;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

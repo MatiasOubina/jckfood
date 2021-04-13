@@ -1,0 +1,109 @@
+.servicios-container{
+    overflow: hidden;
+    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
+    border-bottom: 50px solid #F1A434;
+}
+
+.col{
+    h2{
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.form-reserva{
+    display: flex;
+    justify-content: center;
+}
+
+.form-box{
+    input, select{
+        display: block;
+        width: 300px;
+        margin-bottom: 15px;
+    }
+}
+
+.form-buttons{
+    text-align: center;
+    input{
+        display: inline;
+        width: 100px;
+        margin: 30px 15px 50px 15px;
+        transition: 500ms linear;
+    }
+}
+
+.form-buttons{
+    input:hover{
+        color: white;
+        border-radius: 0 30px;
+        background-color: red;
+    }
+}
+
+.deliTake-container{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    margin: 35px 0;
+    text-align: center;
+
+        p{
+            font-size: 25px;
+        }
+
+        a{
+            background-color: #F1A434;
+            border-radius: 10px 0;
+            padding: 10px;
+            font-size: 14px;
+            text-decoration: none;
+            transition: 500ms linear;
+        }
+}
+
+.menu:hover{
+    a{
+        color: white;
+        border-radius: 0 30px;
+        background-color: red;
+    }
+}
+
+.deli-buttons{
+    input{
+        display: inline;
+        width: 100px;
+        margin: 30px 15px 50px 15px;
+        transition: 500ms linear;
+    }
+}
+
+.deli-buttons{
+    input:hover{
+        border-radius: 0 30px;
+        background-color: red;
+        color: white;
+    }
+}
+
+
+
+/*MEDIA QUERIES*/
+
+@media(max-width: 660px){
+    
+    .servicios{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .deliTake-container, .servicios-container{
+        border-bottom: 5px solid #F1A434;
+    }
+}
+
