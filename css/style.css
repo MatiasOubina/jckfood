@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Another Shabby";
-  src: url(../../fonts/Anothershabby_trial.woff) format("woff");
+  src: url(../fonts/Anothershabby_trial.woff) format("woff");
 }
 @font-face {
   font-family: "Josefin Sans";
-  src: url(../../fonts/JosefinSans-Regular.woff) format("woff");
+  src: url(../fonts/JosefinSans-Regular.woff) format("woff");
 }
 h2, h3, p, a, label {
   font-family: "Josefin Sans";
@@ -72,7 +72,7 @@ input, textarea, select {
   }
 }
 .buttons {
-  background-image: url(../../img/imgSctButtons.png);
+  background-image: url(../img/imgSctButtons.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -512,6 +512,10 @@ video {
     font-size: 22px;
   }
 
+  .contactoData-container h3 {
+    font-size: 34px;
+  }
+
   .boxData-container {
     display: inline;
     text-align: center;
@@ -540,7 +544,7 @@ video {
   }
 
   .contactoData-container h3 {
-    font-size: 20px;
+    font-size: 32px;
     padding: 0;
     margin-top: 30px;
   }
