@@ -15,17 +15,8 @@ a {
   color: black;
 }
 
-input, textarea, select {
-  border: none;
-  outline: none;
-  border-radius: 10px 0;
-  background-color: #F1A434;
-  color: black;
-  resize: none;
-}
-
 ::placeholder {
-  color: #453B3B;
+  color: #DADDE2;
 }
 
 .navbar {
@@ -287,6 +278,13 @@ video {
   background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
   border-bottom: 50px solid #F1A434;
 }
+.servicios-container input, .servicios-container select {
+  border: none;
+  outline: none;
+  background-color: #c0261a;
+  border-bottom: 2px solid #F1A434;
+  color: #DADDE2;
+}
 
 .col h2 {
   text-align: center;
@@ -312,6 +310,10 @@ video {
   display: inline;
   width: 100px;
   margin: 30px 15px 50px 15px;
+  background-color: #F1A434;
+  border-radius: 10px 0;
+  border-bottom: none;
+  color: black;
   transition: 500ms linear;
 }
 
@@ -352,6 +354,10 @@ video {
   display: inline;
   width: 100px;
   margin: 30px 15px 50px 15px;
+  background-color: #F1A434;
+  border-radius: 10px 0;
+  border-bottom: none;
+  color: black;
   transition: 500ms linear;
 }
 
@@ -384,6 +390,13 @@ video {
   margin-bottom: 30px;
   font-size: 58px;
 }
+.contactoData-container input, .contactoData-container select {
+  border: none;
+  outline: none;
+  background-color: #c0261a;
+  border-bottom: 2px solid #F1A434;
+  color: #DADDE2;
+}
 
 .form-contacto {
   display: flex;
@@ -406,12 +419,21 @@ video {
 }
 .subject textarea, .message textarea {
   border-radius: 10px;
+  border-color: #F1A434;
+  background-color: #c0261a;
+}
+.subject textarea:focus, .message textarea:focus {
+  outline: 0 none;
   background-color: #F1A434;
 }
 
 .contact-buttons input {
   width: 100px;
   margin: 30px 15px 50px 0px;
+  background-color: #F1A434;
+  border-radius: 10px 0;
+  border-bottom: none;
+  color: black;
   transition: 500ms linear;
 }
 
@@ -428,11 +450,14 @@ video {
 }
 .boxData-container .boxMobile {
   width: 600px;
-  background-color: #F1A434;
+  border: 2px solid #F1A434;
   border-radius: 10px;
   margin: 10px 0;
   padding: 15px;
   line-height: 10px;
+}
+.boxData-container .boxMobile .black {
+  color: black;
 }
 
 @media (min-width: 1024px) and (max-width: 1268px) {
@@ -460,7 +485,7 @@ video {
   }
   .boxData-container .boxMobile {
     width: 600px;
-    background-color: #F1A434;
+    border: 2px solid #F1A434;
     border-radius: 10px;
     margin: 10px 0;
     padding: 20px;
@@ -494,7 +519,7 @@ video {
   }
   .boxData-container .boxMobile {
     width: 600px;
-    background-color: #F1A434;
+    border: 2px solid #F1A434;
     border-radius: 10px;
     margin: 10px auto;
     padding: 20px;
@@ -523,7 +548,7 @@ video {
   }
   .boxData-container .boxMobile {
     width: 400px;
-    background-color: #F1A434;
+    border: 2px solid #F1A434;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
@@ -561,7 +586,7 @@ video {
   .boxData-container .boxMobile {
     width: 280px;
     height: 120px;
-    background-color: #F1A434;
+    border: 2px solid #F1A434;
     border-radius: 10px;
     margin: 10px auto;
     padding: 10px;
@@ -611,10 +636,18 @@ footer p {
   display: block;
   margin-top: 5px;
   text-align: center;
+  color: #F1A434;
+}
+.terminosCondiciones a:hover {
+  color: white;
 }
 
 .autor {
   color: #F1A434;
+}
+
+.autor:hover {
+  color: white;
 }
 
 @media (max-width: 768px) {
@@ -681,9 +714,34 @@ footer p {
 
 .underConstruction {
   background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
-  height: 100vh;
   text-align: center;
   padding: 30px;
+}
+.underConstruction h2 {
+  margin: 50px 0;
+}
+
+.tarjeta {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+
+.food {
+  margin: 15px;
+  width: 25rem;
+}
+
+@media (min-width: 1441px) {
+  .food {
+    width: 18rem;
+  }
+}
+@media (min-width: 1109px) and (max-width: 1440px) {
+  .food {
+    width: 14rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

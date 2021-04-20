@@ -2,6 +2,15 @@
     overflow: hidden;
     background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
     border-bottom: 50px solid #F1A434;
+
+        input, select{
+            border: none;
+            outline: none;
+            background-color: #c0261a;
+            border-bottom: 2px solid #F1A434;
+            color: #DADDE2;;
+        }
+
 }
 
 .col{
@@ -31,6 +40,10 @@
         display: inline;
         width: 100px;
         margin: 30px 15px 50px 15px;
+        background-color: #F1A434;
+        border-radius: 10px 0;
+        border-bottom: none;
+        color: black;
         transition: 500ms linear;
     }
 }
@@ -79,6 +92,10 @@
         display: inline;
         width: 100px;
         margin: 30px 15px 50px 15px;
+        background-color: #F1A434;
+        border-radius: 10px 0;
+        border-bottom: none;
+        color: black;
         transition: 500ms linear;
     }
 }

@@ -1,6 +1,38 @@
 .underConstruction{
     background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
-    height: 100vh;
+    // height: 100vh;
     text-align: center;
     padding: 30px;
+
+    h2{
+        margin: 50px 0;
+        
+    }
 }
+
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+
+    
+ }
+
+.food{
+    margin: 15px;
+    width: 25rem;
+}
+
+@media(min-width: 1441px){
+    .food{
+        width: 18rem;
+    }
+}
+
+@media(min-width: 1109px) and (max-width: 1440px){
+    .food{
+        width: 14rem;
+    }
+}
+
