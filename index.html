@@ -60,11 +60,11 @@
       <section class="buttons-container">
         <div class="buttons">
           <div class="button-1">
-              <a href="#">Take-Away</a>
+              <a href="#" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')">Take-Away</a>
             </div>
 
             <div class="button-2">
-              <a href="#">Delivery</a>
+              <a href="#" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')">Delivery</a>
             </div>
           </div>    
         <div class="info-container">
@@ -92,13 +92,13 @@
       <div class="redes-container mobile">
         <div class="redes">
           <div class="facebook">
-            <a href=""><img src="img/bk-facebook.png" alt="Facebook"></a>
+            <a href="https://es-la.facebook.com/"><img src="img/bk-facebook.png" alt="Facebook"></a>
           </div>
           <div class="instagram">
-            <a href=""><img src="img/bk-instagram.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/?hl=es-la"><img src="img/bk-instagram.png" alt="Instagram"></a>
           </div>
           <div class="tiwtter">
-            <a href=""><img src="img/bk-twitter.png" alt="Twitter"></a>
+            <a href="https://twitter.com/"><img src="img/bk-twitter.png" alt="Twitter"></a>
           </div>
         </div>
       </div>
@@ -118,13 +118,13 @@
       <div class="redes-container desktop">
         <div class="redes">
           <div class="facebook">
-            <a href=""><img src="img/bk-facebook.png" alt="Facebook"></a>
+            <a href="https://es-la.facebook.com/"><img src="img/bk-facebook.png" alt="Facebook"></a>
           </div>
           <div class="instagram">
-            <a href=""><img src="img/bk-instagram.png" alt="Instagram"></a>
+            <a href="https://www.instagram.com/?hl=es-la"><img src="img/bk-instagram.png" alt="Instagram"></a>
           </div>
           <div class="tiwtter">
-            <a href=""><img src="img/bk-twitter.png" alt="Twitter"></a>
+            <a href="https://twitter.com/"><img src="img/bk-twitter.png" alt="Twitter"></a>
           </div>
         </div>
       </div>
@@ -132,96 +132,97 @@
     <!-- FIN SECCION NOSOTROS-->
 
     <!--SECCION RESERVAS & DELIVERY / TAKEAWAY (_sctServices)-->
+    <section>
+      <div class="servicios-container">
+        <div class="row servicios" id="servicios">
+          <div class="col reserva">
+            <h2>Reserva tu lugar</h2>
+              <div class="form-reserva">
+                <form action="">
+                  <div class="form-box">
+                    <label for="nombre_apellido">Nombre y Apellido:</label>
+                    <input type="text" name="nombre_apellido" placeholder="Ej. Pedro Perez" id="nombre_apellido">
+                  </div>
+                  
+                  <div class="form-box">
+                    <label for="direccion_correo">Dirección de correo:</label>
+                    <input type="email" name="direccion_correo" placeholder="mail@ejemplo.com" id="direccion_correo">
+                  </div> 
+                  
+                  <div class="form-box">
+                    <label for="fecha_reserva">Elija una fecha:</label>
+                    <input type="date" name="fecha_reserva" id="fecha_reserva">
+                  </div>
+                  
+                  <div class="form-box">
+                    <label for="hora_reserva">Elija un horario:</label>
+                      <select name="hora_reserva" id="hora_reserva">
+                        <option>Seleccionar opción</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                      </select>
+                  </div>
 
-    <div class="servicios-container">
-      <div class="row servicios" id="servicios">
-        <div class="col reserva">
-          <h2>Reserva tu lugar</h2>
-            <div class="form-reserva">
-              <form action="">
-                <div class="form-box">
-                  <label for="nombre_apellido">Nombre y Apellido:</label>
-                  <input type="text" name="nombre_apellido" placeholder="Ej. Pedro Perez" id="nombre_apellido">
-                </div>
-                
-                <div class="form-box">
-                  <label for="direccion_correo">Dirección de correo:</label>
-                  <input type="email" name="direccion_correo" placeholder="mail@ejemplo.com" id="direccion_correo">
-                </div> 
-                
-                <div class="form-box">
-                  <label for="fecha_reserva">Elija una fecha:</label>
-                  <input type="date" name="fecha_reserva" id="fecha_reserva">
-                </div>
-                
-                <div class="form-box">
-                  <label for="hora_reserva">Elija un horario:</label>
-                    <select name="hora_reserva" id="hora_reserva">
-                      <option>Seleccionar opción</option>
-                      <option value="12:00">12:00</option>
-                      <option value="13:00">13:00</option>
-                      <option value="14:00">14:00</option>
-                      <option value="15:00">15:00</option>
-                      <option value="16:00">16:00</option>
-                      <option value="17:00">17:00</option>
-                      <option value="18:00">18:00</option>
-                      <option value="19:00">19:00</option>
-                      <option value="20:00">20:00</option>
-                      <option value="21:00">21:00</option>
-                      <option value="22:00">22:00</option>
+                  <div class="form-box">
+                    <label for="total_comensales">Tamaño del grupo:</label>
+                      <select name="total_comensales" id="total_comensales">
+                        <option>Seleccionar opción</option>
+                        <option value="uno">1 persona</option>
+                        <option value="dos">2 personas</option>
+                        <option value="tres">3 personas</option>
+                        <option value="cuatro">4 personas</option>
+                        <option value="cinco">5 personas</option>
+                        <option value="seis">6 personas</option>
                     </select>
-                </div>
-
-                <div class="form-box">
-                  <label for="total_comensales">Tamaño del grupo:</label>
-                    <select name="total_comensales" id="total_comensales">
-                      <option>Seleccionar opción</option>
-                      <option value="uno">1 persona</option>
-                      <option value="dos">2 personas</option>
-                      <option value="tres">3 personas</option>
-                      <option value="cuatro">4 personas</option>
-                      <option value="cinco">5 personas</option>
-                      <option value="seis">6 personas</option>
-                  </select>
-                </div>
-
-                <div class="form-box form-buttons">
-                  <input type="submit" value="Enviar">
-                  <input type="reset" value="Borrar">
-                </div>
-              </form>
-            </div>
-        </div>
-        <div class="col delivery">
-          <h2>Take Away & Delivery</h2>
-            <div class="deliTake-container">
-              <div class="deli-take">
-                <h3>Retirá o te lo llevamos!</h3>
-
-                  <div class="menu japones">
-                    <p>Comida Japonesa</p>
-                    <a href="menues/prueba.pdf" target="_blank">DESCARGAR MENU</a>
                   </div>
 
-                  <div class="menu chino">
-                    <p>Comida China</p>
-                    <a href="menues/prueba.pdf" target="_blank">DESCARGAR MENU</a>
+                  <div class="form-box form-buttons">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
                   </div>
-
-                  <div class="menu koreano">
-                    <p>Comida Coreana</p>
-                    <a href="menues/prueba.pdf" target="_blank">DESCARGAR MENU</a>
-                  </div>
-
-                  <div class="deli-buttons">
-                    <input type="button" value="Take Away">
-                    <input type="button" value="Delivery">
-                  </div>
+                </form>
               </div>
-            </div>
+          </div>
+          <div class="col delivery">
+            <h2>Take Away & Delivery</h2>
+              <div class="deliTake-container">
+                <div class="deli-take">
+                  <h3>Retirá o te lo llevamos!</h3>
+
+                    <div class="menu japones">
+                      <p>Comida Japonesa</p>
+                      <a href="menues/menu_japon.pdf" target="_blank">DESCARGAR MENU</a>
+                    </div>
+
+                    <div class="menu chino">
+                      <p>Comida China</p>
+                      <a href="menues/menu_china.pdf" target="_blank">DESCARGAR MENU</a>
+                    </div>
+
+                    <div class="menu koreano">
+                      <p>Comida Coreana</p>
+                      <a href="menues/menu_corea.pdf" target="_blank">DESCARGAR MENU</a>
+                    </div>
+
+                    <div class="deli-buttons">
+                      <input type="button" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')" value="Take Away">
+                      <input type="button" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')" value="Delivery">
+                    </div>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--FIN SECCION RESERVAS & DELIVERY / TAKEAWAY-->
     
     <!--SECCION CONTACTO & DATA (_sctContact)-->
