@@ -20,7 +20,6 @@ a {
 }
 
 /**********NAVBAR**********/
-
 .navbar {
   background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
   border-bottom: 1px solid #F1A434;
@@ -64,9 +63,7 @@ a {
     font-size: 22px;
   }
 }
-
 /**********SECCION BOTONES**********/
-
 .buttons {
   background-image: url(../img/imgSctButtons.png);
   background-repeat: no-repeat;
@@ -155,9 +152,7 @@ a {
     height: 400px;
   }
 }
-
 /**********SECCION REDES & VIDEO**********/
-
 .redes-container {
   background-color: #F1A434;
 }
@@ -281,9 +276,7 @@ video {
     margin-bottom: 50px;
   }
 }
-
 /**********SECCION SERVICIOS**********/
-
 .servicios-container {
   overflow: hidden;
   background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
@@ -389,9 +382,7 @@ video {
     border-bottom: 5px solid #F1A434;
   }
 }
-
 /**********SECCION CONTACTO**********/
-
 .contactoData-container {
   background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
   padding-bottom: 20px;
@@ -681,9 +672,7 @@ footer p {
     margin: 10px 0;
   }
 }
-
 /**********PAGINA NOSOTROS**********/
-
 .nosotros {
   background: #c0261a;
 }
@@ -717,7 +706,6 @@ footer p {
 }
 
 /**********PAGINA MENU**********/
-
 .menu-container {
   background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
   text-align: center;
