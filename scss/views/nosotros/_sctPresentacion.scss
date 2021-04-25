@@ -3,13 +3,13 @@
 }
 
 .card-text{
-    color: black;
+    color: nth($colores , 1 );
 }
 
 .btn-volver{
     width: 250px;
     height: 60px;
-    background-color: #F1A434;
+    background-color: nth($colores , 4 );
     align-self: center;
     text-align: center;
     padding: 12px 0;

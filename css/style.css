@@ -281,7 +281,7 @@ video {
 .servicios-container input, .servicios-container select {
   border: none;
   outline: none;
-  background-color: #c0261a;
+  background-color: #C0261A;
   border-bottom: 2px solid #F1A434;
   color: #DADDE2;
 }
@@ -393,7 +393,7 @@ video {
 .contactoData-container input, .contactoData-container select {
   border: none;
   outline: none;
-  background-color: #c0261a;
+  background-color: #C0261A;
   border-bottom: 2px solid #F1A434;
   color: #DADDE2;
 }
@@ -401,6 +401,7 @@ video {
 .form-contacto {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .name, .mail {
@@ -420,7 +421,8 @@ video {
 .subject textarea, .message textarea {
   border-radius: 10px;
   border-color: #F1A434;
-  background-color: #c0261a;
+  background-color: #C0261A;
+  resize: none;
 }
 .subject textarea:focus, .message textarea:focus {
   outline: 0 none;
@@ -467,7 +469,6 @@ video {
   }
 
   .form-contacto {
-    text-align: center;
     font-size: 20px;
   }
 
@@ -479,22 +480,20 @@ video {
   }
 
   .boxData-container {
-    display: inline;
-    text-align: center;
     font-size: 25px;
   }
   .boxData-container .boxMobile {
-    width: 600px;
-    border: 2px solid #F1A434;
-    border-radius: 10px;
-    margin: 10px 0;
-    padding: 20px;
     line-height: 15px;
   }
 
   .googleMap {
     text-align: center;
     margin-right: 15px;
+  }
+}
+@media (min-width: 1116px) {
+  .form-contacto {
+    text-align: left;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -513,16 +512,9 @@ video {
   }
 
   .boxData-container {
-    display: inline;
-    text-align: center;
     font-size: 22px;
   }
   .boxData-container .boxMobile {
-    width: 600px;
-    border: 2px solid #F1A434;
-    border-radius: 10px;
-    margin: 10px auto;
-    padding: 20px;
     line-height: 15px;
   }
 
@@ -531,9 +523,13 @@ video {
     margin-right: 0;
   }
 }
+@media (min-width: 529px) {
+  .labelNombre, .labelMail {
+    text-align: left;
+  }
+}
 @media (min-width: 425px) and (max-width: 767px) {
   .form-contacto {
-    text-align: center;
     font-size: 22px;
   }
 
@@ -542,14 +538,10 @@ video {
   }
 
   .boxData-container {
-    display: inline;
-    text-align: center;
     font-size: 22px;
   }
   .boxData-container .boxMobile {
     width: 400px;
-    border: 2px solid #F1A434;
-    border-radius: 10px;
     margin: 10px;
     padding: 20px;
     line-height: 15px;
@@ -562,9 +554,8 @@ video {
     width: 400px;
   }
 }
-@media (max-width: 424px) {
+@media (min-width: 320px) and (max-width: 424px) {
   .form-contacto {
-    text-align: center;
     font-size: 18px;
   }
 
@@ -579,15 +570,11 @@ video {
   }
 
   .boxData-container {
-    display: inline;
-    text-align: center;
     font-size: 22px;
   }
   .boxData-container .boxMobile {
     width: 280px;
     height: 120px;
-    border: 2px solid #F1A434;
-    border-radius: 10px;
     margin: 10px auto;
     padding: 10px;
     line-height: 25px;
@@ -712,12 +699,12 @@ footer p {
   background-color: red;
 }
 
-.underConstruction {
+.menu-container {
   background: linear-gradient(135deg, #c0261a 50%, #b02017 50%);
   text-align: center;
   padding: 30px;
 }
-.underConstruction h2 {
+.menu-container h2 {
   margin: 50px 0;
 }
 

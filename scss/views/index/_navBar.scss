@@ -1,15 +1,19 @@
+@import '../../utilities/vars';
+@import'../../utilities/listas';
+
 .navbar{
-    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
-    border-bottom: 1px solid #F1A434;
+    background: $bgc;
+    border-bottom: 1px solid nth($colores, 4);
 }
 
 .navbar-brand{
     font-family: 'Another Shabby';
     text-transform: uppercase;
     margin-left: 100px;
-    span{
-        color: #F1A434;
-    }
+        
+        span{
+            color: nth($colores, 4);
+        }
 }
 
 .navbar-collapse{
@@ -21,7 +25,7 @@
 }
 
 .nav-link:hover{
-    background-color: #F1A434;
+    background-color: nth($colores, 4);
 }
 
 
@@ -31,7 +35,7 @@
     }
 
     .navbar-toggler{
-        background-color: #F1A434;
+        background-color: nth($colores, 4);
     }
 
     .navbar-collapse{

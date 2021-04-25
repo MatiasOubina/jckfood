@@ -7,15 +7,15 @@
 
     <!--META TAGS-->
     <!--DESCRIPCION-->
-    <meta name="description" content="The Japanese, China & Korean Union. ¡Los mejores platos asiáticos, en un sólo lugar!">
+    <meta name="description" content="The Japanese, China & Korean Union. ¡Los mejores platos asiáticos, en un sólo lugar! ¡Venía a disfrutar de una experiencia única! ">
     <!--KEYWORDS-->
     <meta name="keywords" content="Comida, Japonesa, China, Coreana, platos únicos, exóticos, Asia, asiática,  para llevar, food, takeaway, delivery">
     <!--OPEN GRAPH-->
     <meta property="og:type" content="website">
     <meta property="og:title" content="JCK Comida asiática">
-    <meta property=" og:description" content="La mejor comida asiática, ahora en Argentina">
-    <meta property= "og:site_name" content="The JCK Food">
-    <meta property= "og:url" content="https://www.jckfood.com.ar">
+    <meta property="og:description" content="La mejor comida asiática, ahora en Argentina. ¡Disfrutá de una experiencia única!">
+    <meta property="og:site_name" content="The JCK Food">
+    <meta property="og:url" content="https://www.jckfood.com.ar">
 
 
     <!--BOOTSTRAP-->
@@ -24,17 +24,17 @@
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css">
     
-    <title>JCK FOOD</title>
+    <title>JCK FOOD | Lo mejor de Asia en un solo lugar! </title>
 </head>
 <body>
 
   <!--NAVBAR (_navBar)-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-        <a class="navbar-brand" href="#"><span>The</span> jck <span>food</span></a>
+      <a class="navbar-brand" href="#"><span>The</span> jck <span>food</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
@@ -50,44 +50,44 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#contacto">Contacto</a>
-              </li>
+            </li>
           </ul>
+      </div>
+    </nav>
+  <!--FIN NAVBAR-->
+
+  <!--SECCION BOTONES & DATA (_sctButtons)-->
+    <section class="buttons-container">
+      <div class="buttons">
+        <div class="button-1">
+          <a href="#" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')">Take-Away</a>
         </div>
-      </nav>
-      <!--FIN NAVBAR-->
 
-      <!--SECCION BOTONES & DATA (_sctButtons)-->
-      <section class="buttons-container">
-        <div class="buttons">
-          <div class="button-1">
-              <a href="#" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')">Take-Away</a>
-            </div>
-
-            <div class="button-2">
-              <a href="#" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')">Delivery</a>
-            </div>
-          </div>    
-        <div class="info-container">
-          <div class="info">
-            <div class="horario">
-              <img src="img/date-clock.png" alt="Días y Horario">
-                <p>Lun - Sáb 12 a 23 hs</p>
-            </div>
-            <div class="direccion">
-              <img src="img/date-location.png" alt="Dirección">
-                <p>Serrano 909, Palermo</p>
-            </div>
-            <div class="telefono">
-              <img src="img/date-phone.png" alt="Teléfono">
-                <p>Escribinos al 11-6858-0000</p>
-            </div>
+        <div class="button-2">
+          <a href="#" onclick="alert('Función no disponible. Contactanos por WhatsApp para hacer tu pedido!')">Delivery</a>
+        </div>
+      </div>    
+        
+      <div class="info-container">
+        <div class="info">
+          <div class="horario">
+            <img src="img/date-clock.png" alt="Días y Horario">
+              <p>Lun - Sáb 12 a 23 hs</p>
+          </div>
+          <div class="direccion">
+            <img src="img/date-location.png" alt="Dirección">
+              <p>Serrano 909, Palermo</p>
+          </div>
+          <div class="telefono">
+            <img src="img/date-phone.png" alt="Teléfono">
+              <p>Escribinos al 11-6858-0000</p>
           </div>
         </div>
-      </section>
-
-      <!--FIN SECCION BOTONES & DATA-->
+      </div>
+    </section>
+  <!--FIN SECCION BOTONES & DATA-->
       
-      <!--SECCION REDES & VIDEO (_sctNet-video)-->
+  <!--SECCION REDES & VIDEO (_sctNet-video)-->
     <section>  
       <div class="redes-container mobile">
         <div class="redes">
@@ -129,35 +129,35 @@
         </div>
       </div>
     </section>
-    <!-- FIN SECCION NOSOTROS-->
+  <!-- FIN SECCION NOSOTROS-->
 
-    <!--SECCION RESERVAS & DELIVERY / TAKEAWAY (_sctServices)-->
-    <section>
+  <!--SECCION RESERVAS & DELIVERY / TAKEAWAY (_sctServices)-->
+    <section id="servicios">
       <div class="servicios-container">
-        <div class="row servicios" id="servicios">
+        <div class="row servicios">
           <div class="col reserva">
             <h2>Reserva tu lugar</h2>
               <div class="form-reserva">
-                <form action="">
+                <form action="php/formularios.php" method="POST">
                   <div class="form-box">
                     <label for="nombre_apellido">Nombre y Apellido:</label>
-                    <input type="text" name="nombre_apellido" placeholder="Ej. Pedro Perez" id="nombre_apellido">
+                    <input type="text" name="nombre_apellido" placeholder="Ej. Pedro Perez" id="nombre_apellido" required>
                   </div>
                   
                   <div class="form-box">
-                    <label for="direccion_correo">Dirección de correo:</label>
-                    <input type="email" name="direccion_correo" placeholder="mail@ejemplo.com" id="direccion_correo">
+                    <label for="direccion_correo">Teléfono:</label>
+                    <input type="tel" name="telefono" placeholder="Ej. 1168580000" id="telefono" required>
                   </div> 
                   
                   <div class="form-box">
                     <label for="fecha_reserva">Elija una fecha:</label>
-                    <input type="date" name="fecha_reserva" id="fecha_reserva">
+                    <input type="date" name="fecha_reserva" id="fecha_reserva" required>
                   </div>
                   
                   <div class="form-box">
                     <label for="hora_reserva">Elija un horario:</label>
-                      <select name="hora_reserva" id="hora_reserva">
-                        <option>Seleccionar opción</option>
+                      <select name="hora_reserva" id="hora_reserva" required>
+                        <option value= "">Seleccionar opción</option>
                         <option value="12:00">12:00</option>
                         <option value="13:00">13:00</option>
                         <option value="14:00">14:00</option>
@@ -174,8 +174,8 @@
 
                   <div class="form-box">
                     <label for="total_comensales">Tamaño del grupo:</label>
-                      <select name="total_comensales" id="total_comensales">
-                        <option>Seleccionar opción</option>
+                      <select name="total_comensales" id="total_comensales" required>
+                        <option value= "">Seleccionar opción</option>
                         <option value="uno">1 persona</option>
                         <option value="dos">2 personas</option>
                         <option value="tres">3 personas</option>
@@ -192,12 +192,12 @@
                 </form>
               </div>
           </div>
+        
           <div class="col delivery">
             <h2>Take Away & Delivery</h2>
               <div class="deliTake-container">
                 <div class="deli-take">
                   <h3>Retirá o te lo llevamos!</h3>
-
                     <div class="menu japones">
                       <p>Comida Japonesa</p>
                       <a href="menues/menu_japon.pdf" target="_blank">DESCARGAR MENU</a>
@@ -223,82 +223,81 @@
         </div>
       </div>
     </section>
-    <!--FIN SECCION RESERVAS & DELIVERY / TAKEAWAY-->
+  <!--FIN SECCION RESERVAS & DELIVERY / TAKEAWAY-->
     
-    <!--SECCION CONTACTO & DATA (_sctContact)-->
+  <!--SECCION CONTACTO & DATA (_sctContact)-->
     <div class="contactoData-container" id="contacto">
       <h3>¿Sugerencias, dudas, reclamos? ¡Contactanos!</h3>
-      <div class="row">
-        <div class="col contacto">
-          <div class="form-contacto">
-            <form action="">
-              
-              <div class="contact-box name">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" placeholder="Ej. Juan" id="nombre">
-              </div>
+        <div class="row">
+          <div class="col contacto">
+            <div class="form-contacto">
+              <form action="php/formularios.php" method="POST">
+                <div class="contact-box name">
+                  <label class="labelNombre" for="nombre">Nombre:</label>
+                  <input type="text" name="nombre" placeholder="Ej. Juan" id="nombre" required>
+                </div>
 
-              <div class="contact-box mail">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" name="email" placeholder="tumail@mail.com" id="email">
-              </div>
+                <div class="contact-box mail">
+                  <label class="labelMail" for="email">Correo Electrónico:</label>
+                  <input type="email" name="email" placeholder="tumail@mail.com" id="email" required>
+                </div>
               
-              <div class="contact-box subject">
-                <label for="asunto">Asunto:</label>
-                <select name="asunto" id="asunto">
-                  <option>Seleccione</option>
-                  <option value="sugerencia">Sugerencia</option>
-                  <option value="consulta">Consulta</option>
-                  <option value="reclamo">Reclamo</option>
-                  <option value="otros">Otro</option>
-                </select>
-              </div>
+                <div class="contact-box subject">
+                  <label for="asunto">Asunto:</label>
+                  <select name="asunto" id="asunto" required>
+                    <option value= "">Seleccione</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="consulta">Consulta</option>
+                    <option value="reclamo">Reclamo</option>
+                    <option value="otros">Otro</option>
+                  </select>
+                </div>
 
-              <div class="contact-box message">
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="mensaje" id="" cols="30" rows="5"></textarea>
-              </div>  
+                <div class="contact-box message">
+                  <label for="mensaje">Mensaje:</label>
+                  <textarea name="mensaje" cols="30" rows="5" id="mensaje" required></textarea>
+                </div>  
               
-              <div class="contact-buttons">
-                <input type="button" value="Enviar">
-                <input type="reset" value="Borrar">
-              </div>
-            </form>
-          </div>
-        </div>
-
-        <div class="col data">
-          <div class="boxData-container">
-            <div class="boxMobile">
-              <p>Días y horario</p>
-              <p class="black">Lun. a Sab. de 12:00 a.m - 23:00 p.m.</p>
+                <div class="contact-buttons">
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Borrar">
+                </div>
+              </form>
             </div>
+          </div>
+
+          <div class="col data">
+            <div class="boxData-container">
+              <div class="boxMobile">
+                <p>Días y horario</p>
+                <p class="black">Lun. a Sab. de 12:00 a.m - 23:00 p.m.</p>
+              </div>
             
-            <div class="boxMobile">
-              <p>Teléfono</p>
-              <p><a href="tel:+541168580000">+54 11 6858 0000</a></p>
+              <div class="boxMobile">
+                <p>Teléfono</p>
+                <p><a href="tel:+541168580000">+54 11 6858 0000</a></p>
+              </div>
+
+              <div class="boxMobile">
+                <p>Mail</p>
+                <p><a href="mailto:hola@jckfood.com.ar">hola@jckfood.com.ar</a></p>
+              </div>
+
+              <div class="boxMobile">
+                <p>Dirección</p>
+                <p class="black">Serrano 909, Palermo</p>
+              </div>
             </div>
 
-            <div class="boxMobile">
-              <p>Mail</p>
-              <p><a href="mailto:hola@jckfood.com.ar">hola@jckfood.com.ar</a></p>
+            <div class="googleMap">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4206886835173!2d-58.43978258477054!3d-34.59352218046213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58a7def626f%3A0x12eb22632db77693!2sSerrano%20909%2C%20C1414DES%20CABA!5e0!3m2!1ses-419!2sar!4v1614635019498!5m2!1ses-419!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
-
-            <div class="boxMobile">
-              <p>Dirección</p>
-              <p class="black">Serrano 909, Palermo</p>
-            </div>
-          </div>
-
-          <div class="googleMap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.4206886835173!2d-58.43978258477054!3d-34.59352218046213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb58a7def626f%3A0x12eb22632db77693!2sSerrano%20909%2C%20C1414DES%20CABA!5e0!3m2!1ses-419!2sar!4v1614635019498!5m2!1ses-419!2sar" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
-      </div>
     </div>
-    <!--FIN SECCION CONTACTO & DATA-->
+  <!--FIN SECCION CONTACTO & DATA-->
 
-    <!--FOOTER (_footer)-->
+  <!--FOOTER (_footer)-->
     <footer>
       <div class="footer-container">
         <div class="mediosDePago">
@@ -321,7 +320,7 @@
 
       <p>Copyrigth ® 2021 All rights reserved | Desarrollado por <a class="autor" href="https://www.linkedin.com/in/matiasoubi/">Matías Oubiña</a></p>
     </footer>
-    <!--FIN FOOTER-->
+  <!--FIN FOOTER-->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

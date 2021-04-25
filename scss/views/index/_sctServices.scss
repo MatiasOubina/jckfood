@@ -1,14 +1,14 @@
 .servicios-container{
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
-    border-bottom: 50px solid #F1A434;
+    background: $bgc;
+    border-bottom: 50px solid nth($colores, 4);
 
         input, select{
             border: none;
             outline: none;
-            background-color: #c0261a;
-            border-bottom: 2px solid #F1A434;
-            color: #DADDE2;;
+            background-color: nth($colores, 5);
+            border-bottom: 2px solid nth($colores, 4);
+            color: nth($colores, 6);;
         }
 
 }
@@ -40,10 +40,10 @@
         display: inline;
         width: 100px;
         margin: 30px 15px 50px 15px;
-        background-color: #F1A434;
+        background-color: nth($colores, 4);
         border-radius: 10px 0;
         border-bottom: none;
-        color: black;
+        color: nth($colores, 1);
         transition: 500ms linear;
     }
 }
@@ -52,7 +52,7 @@
     input:hover{
         color: white;
         border-radius: 0 30px;
-        background-color: red;
+        background-color: nth($colores, 3);
     }
 }
 
@@ -70,7 +70,7 @@
         }
 
         a{
-            background-color: #F1A434;
+            background-color: nth($colores, 4);
             border-radius: 10px 0;
             padding: 10px;
             font-size: 14px;
@@ -83,7 +83,7 @@
     a{
         color: white;
         border-radius: 0 30px;
-        background-color: red;
+        background-color: nth($colores, 3);
     }
 }
 
@@ -92,10 +92,10 @@
         display: inline;
         width: 100px;
         margin: 30px 15px 50px 15px;
-        background-color: #F1A434;
+        background-color: nth($colores, 4);
         border-radius: 10px 0;
         border-bottom: none;
-        color: black;
+        color: nth($colores, 1);
         transition: 500ms linear;
     }
 }
@@ -103,7 +103,7 @@
 .deli-buttons{
     input:hover{
         border-radius: 0 30px;
-        background-color: red;
+        background-color: nth($colores, 3);
         color: white;
     }
 }
@@ -120,7 +120,7 @@
     }
 
     .deliTake-container, .servicios-container{
-        border-bottom: 5px solid #F1A434;
+        border-bottom: 5px solid nth($colores, 4);
     }
 }
 

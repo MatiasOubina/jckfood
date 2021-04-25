@@ -1,7 +1,7 @@
 .contactoData-container{
-    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
+    background: $bgc;
     padding-bottom: 20px;
-    border-bottom: 2px solid #F1A434;
+    border-bottom: 2px solid nth($colores, 4);
     overflow-x: hidden;
 
     h3{
@@ -14,23 +14,25 @@
     input, select{
         border: none;
         outline: none;
-        background-color: #c0261a;
-        border-bottom: 2px solid #F1A434;
-        color: #DADDE2;;
+        background-color: nth($colores, 5);
+        border-bottom: 2px solid nth($colores, 4);
+        color: #DADDE2;
     }
 }
 
 .form-contacto{
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .name, .mail{
     display: inline-block;
     margin: 15px 10px 15px 0;  
-    label, input{
-        display: block;
-    }
+    
+        label, input{
+            display: block;
+        }
 }
 
 .subject, .message{
@@ -41,13 +43,14 @@
 
     textarea{
         border-radius: 10px;
-        border-color: #F1A434;
-        background-color: #c0261a;
+        border-color: nth($colores, 4);
+        background-color: nth($colores, 5);
+        resize: none;
     }
 
     textarea:focus{
         outline: 0 none;
-        background-color: #F1A434;
+        background-color: nth($colores, 4);
     }
 }
 
@@ -55,7 +58,7 @@
     input{
         width: 100px;
         margin: 30px 15px 50px 0px;
-        background-color: #F1A434;
+        background-color: nth($colores, 4);
         border-radius: 10px 0;
         border-bottom: none;
         color: black;
@@ -67,7 +70,7 @@
     input:hover{
         color: white;
         border-radius: 0 30px;
-        background-color: red;
+        background-color: nth($colores, 3);
     }
 }
 
@@ -79,18 +82,20 @@
     
     .boxMobile{
     width: 600px;
-    border: 2px solid #F1A434;
+    border: 2px solid nth($colores, 4);
     border-radius: 10px;
     margin: 10px 0;
     padding: 15px;
     line-height: 10px;
         
         .black{
-            color: black;
+            color: nth($colores, 1);
         }
     }
 
 }
+
+//MEDIA QUERIES
 
 @media(min-width: 1024px) and (max-width: 1268px){
     .contactoData-container{
@@ -101,7 +106,7 @@
     }
 
     .form-contacto{
-        text-align: center;
+        // text-align: center;
         font-size: 20px;
     }
 
@@ -116,16 +121,16 @@
     }
 
     .boxData-container{
-        display: inline;
-        text-align: center;
+        // display: inline;
+        // text-align: center;
         font-size: 25px;
         
         .boxMobile{
-        width: 600px;
-        border: 2px solid #F1A434;
-        border-radius: 10px;
-        margin: 10px 0;
-        padding: 20px;
+        // width: 600px;
+        // border: 2px solid #F1A434;
+        // border-radius: 10px;
+        // margin: 10px 0;
+        // padding: 20px;
         line-height: 15px;
         }
 
@@ -135,6 +140,12 @@
         text-align: center;
         margin-right: 15px;
         
+    }
+}
+
+@media(min-width: 1116px){
+    .form-contacto{
+        text-align: left;
     }
 }
 
@@ -156,17 +167,17 @@
     }
 
     .boxData-container{
-        display: inline;
-        text-align: center;
+        // display: inline;
+        // text-align: center;
         font-size: 22px;
         
         
         .boxMobile{
-        width: 600px;
-        border: 2px solid #F1A434;
-        border-radius: 10px;
-        margin: 10px auto;
-        padding: 20px;
+        // width: 600px;
+        // border: 2px solid #F1A434;
+        // border-radius: 10px;
+        // margin: 10px auto;
+        // padding: 20px;
         line-height: 15px;
         }
 
@@ -178,9 +189,15 @@
     }
 }
 
+@media(min-width: 529px) {
+    .labelNombre, .labelMail{
+        text-align: left;
+    }
+}
+
 @media(min-width: 425px) and (max-width: 767px){
     .form-contacto{
-        text-align: center;
+        // text-align: center;
         font-size: 22px;
     }
 
@@ -191,14 +208,14 @@
     }
 
     .boxData-container{
-        display: inline;
-        text-align: center;
+        // display: inline;
+        // text-align: center;
         font-size: 22px;
 
         .boxMobile{
         width: 400px;
-        border: 2px solid #F1A434;
-        border-radius: 10px;
+        // border: 2px solid #F1A434;
+        // border-radius: 10px;
         margin: 10px;
         padding: 20px;
         line-height: 15px;
@@ -214,9 +231,9 @@
     }
 }
 
-@media(max-width: 424px){
+@media(min-width: 320px) and (max-width: 424px){
     .form-contacto{
-        text-align: center;
+        // text-align: center;
         font-size: 18px;
     }
 
@@ -234,16 +251,16 @@
     }
 
     .boxData-container{
-        display: inline;
-        text-align: center;
+        // display: inline;
+        // text-align: center;
         font-size: 22px;
         
         
         .boxMobile{
         width: 280px;
         height: 120px;
-        border: 2px solid #F1A434;
-        border-radius: 10px;
+        // border: 2px solid #F1A434;
+        // border-radius: 10px;
         margin: 10px auto;
         padding: 10px;
         line-height: 25px;

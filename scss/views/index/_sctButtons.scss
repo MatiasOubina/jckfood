@@ -29,7 +29,7 @@
 
 .button-1:hover, .button-2:hover{
     border-radius: 0 30px;
-    background-color: red;
+    background-color: nth($colores, 3);
 }
 
 .info-container{
@@ -42,7 +42,6 @@
 }
 
 .horario, .direccion, .telefono{
-    // background-color: #FFABAB;
     padding: 0 15px;
     
         img{
@@ -99,6 +98,4 @@
         
          height: 400px;
     }
-
-    
 }

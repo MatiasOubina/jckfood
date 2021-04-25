@@ -1,5 +1,5 @@
 footer{
-    background: linear-gradient(135deg, rgba(192,38,26,1) 50%, rgba(176,32,23,1) 50%);
+    background: $bgc;
     
     p{
         text-align: center;
@@ -17,7 +17,7 @@ footer{
     img{
         width: 50px;
         margin-right: 5px;
-        background-color: #F1A434;
+        background-color: nth($colores, 4);
         border-radius: 10px;
     }
 }
@@ -29,7 +29,7 @@ footer{
     }
     
     span{
-        color: #F1A434
+        color: nth($colores, 4);
     }
 }
 
@@ -39,7 +39,7 @@ footer{
             display: block;
             margin-top: 5px;
             text-align: center;
-            color: #F1A434;
+            color: nth($colores, 4);
         }
 
         a:hover{
@@ -48,7 +48,7 @@ footer{
 }
 
 .autor{
-        color: #F1A434;
+        color: nth($colores, 4);
 }
 
 .autor:hover{

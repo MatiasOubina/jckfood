@@ -1,5 +1,5 @@
 .redes-container{
-    background-color: #F1A434;
+    background-color: nth($colores, 4);
 }
 
 .redes{
@@ -8,7 +8,6 @@
 }
 
 .facebook, .instagram, .tiwtter{
-    // background-color: #FFABAB;
     padding: 0 15px;
     transition: 10ms;
         img{
@@ -38,7 +37,7 @@
 
 .video{
     background-color: #000;
-    border-bottom: 3px solid #F1A434;
+    border-bottom: 3px solid nth($colores, 4);
 }
 
 video{
@@ -58,7 +57,7 @@ video{
             font-size: 100px;
             text-transform: uppercase;
             span{
-                color: #F1A434;
+                color: nth($colores, 4);
             }
         }
         p{
