@@ -1,6 +1,7 @@
-# Desarrollo Web JCK Food
-Proyecto Final del curso de desarrollo web en Coderhouse.
+Demo: https://matiasoubina.github.io/jckfood/
 
-Uso de Bootstrap para el maquetado.
+Proyecto Final del curso de desarrollo web en Coderhouse. Consiste en el desarrollo de un sitio web con 5 secciones.
 
-Link de la web: https://matiasoubina.github.io/jckfood/
+Tecnologías utilizadas: HTML5 - CSS3 - BOOTSTRAP
+
+
